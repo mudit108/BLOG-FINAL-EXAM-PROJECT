@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.top_ten_numbers {
+    position: absolute;
+    bottom: -65px;
+    right: 10px;
+    font-weight: var(--font-weight-extra-bold);
+    font-size: 7.5em;
+    color: red;
+    background-clip: text;
+    -webkit-background-clip: text;
+    line-height: normal;
+    transition: all .4s ease-out;
+    z-index: 2;
+}

@@ -1,0 +1,209 @@
+.navbar{
+    height: 80px;
+    background-color:black;
+    backdrop-filter: blur(5px);
+}
+.navbar  img{
+    height: 40px;
+}
+.collapse  a{
+    color: white;
+}
+
+.carousel .main-banner{
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.carousel .main-banner-1{
+    background-image: url(../img/slider/slider1.jpg);
+    backdrop-filter: drop-shadow(4px 4px 10px blue);
+}
+.carousel .main-banner-1 .title-bg{
+    background: url(../img/texure.jpg);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.main-banner-part-1{
+    width: 90%;
+}
+
+
+svg#play {
+    width:50px;
+    display:block;
+    cursor: pointer;
+    transform-origin: 50% 50%;
+  }
+  
+  svg#play #triangle {
+    fill:rgba(22,22,22,0);
+    transition:500ms;
+    transform-origin: 50% 50%;
+  }
+  svg#play:hover #triangle {
+    fill:#FFF;
+    transform-origin: 50% 50%;
+  }
+  
+   svg #lineOne, svg #lineTwo {
+    transform-origin: 50% 50%;
+    transition: 1s;
+  } 
+  
+   svg:hover #lineOne {
+    transform: rotate(260deg);
+     -webkit-transform: rotate(260deg);
+  -moz-transform: rotate(260deg);
+  -o-transform: rotate(260deg);
+     transform-origin: 50% 50%;
+  } 
+  
+   svg:hover #lineTwo {
+    transform: rotate(-450deg);
+     transform-origin: 50% 50%;
+  } 
+
+.carousel .main-banner-2{
+    background-image: url(../img/slider/slider2.jpg);
+}
+.carousel .main-banner-2 .title-bg{
+    background: url(../img/texure.jpg);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+.carousel .main-banner-3{
+    background-image: url(../img/slider/slider3.jpg);
+}
+.carousel .main-banner-3 .title-bg{
+    background: url(../img/texure.jpg);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+.carousel .main-banner::after{
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(20, 20, 20, 0.9) 15%, rgba(83, 100, 141, 0) 100%);
+width: 100%;
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+}
+
+.top_ten_numbers{
+    position: absolute;
+    bottom: -65px;
+    right: 10px;
+    font-weight: var(--font-weight-extra-bold);
+    font-size: 7.5em;
+    color: red;
+    background-clip: text;
+    -webkit-background-clip: text;
+    line-height: normal;
+    transition: all .4s ease-out;
+    z-index: 2;
+}
+
+
+.tb-border {
+    border-width: 0 0 5px 0;
+    border-color: #357;
+    border-style: solid;
+    margin: 15px 0 45px;
+}
+.blog-title-panel {
+    padding: 5px 10px 10px 15px;
+    margin: 20px 0 0;
+    background: #357;
+    border-radius: 4px 4px 0 0;
+}
+.blog-title-panel .blog-title {
+    color: #eee;
+    font-size: 2.6rem;
+}
+
+.blog-panel, .blogger-panel {
+    padding: 10px 10px 0;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+.blog-panel .location-bar, .blogger-panel .location-bar {
+    text-align: right;
+    padding-left: 0;
+}
+.blog-panel .blog-body, .blogger-panel .blog-body {
+    clear: both;
+    padding-top: 10px;
+}
+.blog-panel .blog-body.left .photo, .blogger-panel .blog-body.left .photo {
+    float: right;
+    margin-left: 15px;
+}
+.ptl {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+}
+.blog-panel .photo .name, .blogger-panel .photo .name {
+    margin-top: 10px;
+    display: inline-block;
+}
+.blog-panel .blog-body.left .blogger-pic, .blogger-panel .blog-body.left .blogger-pic {
+    float: left;
+    margin-right: 15px;
+}
+.blogger-pic .image {
+    display: inline-block;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 90px;
+    width: 90px;
+    min-height: 70px;
+    min-width: 70px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.blog-panel .photo-wrap, .blogger-panel .photo-wrap {
+    margin: 0 auto;
+    display: table;
+    width: auto;
+}
+.blog-panel .thumb, .blogger-panel .thumb {
+    float: left;
+    margin-top: 10px;
+}
+.blog-footer {
+    clear: both;
+    background: #79a;
+    padding: 5px 15px 0;
+    color: #fff;
+}
+.pull-left {
+    float: left !important;
+}
+.pull-right {
+    float: right !important;
+}
+.blog-panel .date, .blogger-panel .date {
+    float: left;
+}
+.blog-panel .date, .blogger-panel .date {
+    display: block;
+    color: #e80;
+}
+
+.border-01 {
+    border: 1px solid #bbb;
+    display: inline-block;
+    text-align: center;
+    padding: 4px;
+    background: #fff;
+}

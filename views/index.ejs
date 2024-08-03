@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>My blogs</title>
+</head>
+<body class="bg-dark">
+    <%- include('./partials/header'); %>
+    <div class="container" style="margin-top: 100px;">
+        <h2 class=" mb-5 text-light">Available blogS</h2>
+        <div class="row bg-transparent">
+            <% blogs.forEach(blog=> { %>
+                <div class="col-6 mb-4 ">
+                    <div class="card bg-transparent text-light" style="height: 320px;">
+                        <img src="<%= blog.image %>" class="card-img-top " style="width:100%; height:50%"
+                            alt="<%= blog.title %>">
+                        <!-- <span class="top_ten_numbers"> 1 </span> -->
+                        <div class="card-body pb-2 position-relative">
+                            <h5 class="card-title fw-bolder">
+                                <%= blog.title %>
+                            </h5>
+                            <h5 class="card-title mt-1 fs-6 blockquote-footer"><%= blog.date.toDateString() %></h5><br>
+                            <text class="card-title pt-0 fs-6 blockquote-footer"><%= blog.location %></text>
+                            <a href="/blog/<%= blog._id %>" class="btn btn-primary position-absolute"
+                                style="bottom: 10px;">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2024 StreamIt by Mudit </p>
+    </footer>
+
+    <script src="assets/css/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
